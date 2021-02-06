@@ -1,7 +1,11 @@
-# CHIP-Seq
-Reanalysis of deeply sequenced ChIP-Seq data from Jung YL, et al. 2014 (NAR).
+# ChIP-Seq
+Reanalysis of ChIP-Seq data from ENCODE of H3K9me3 in human K562 cells.
 
+Experiment summary: https://www.encodeproject.org/experiments/ENCSR000APE/
+Control summary: https://www.encodeproject.org/experiments/ENCSR000AKY/
 
 ## Files:
-sample.list: Contains the SRA metadata table from Jung YL, et al. 2014 (NAR).
-./scripts/get_sra_data.sh: Downloads the human (not including fly samples) ChIP-seq samples from the SRA based on the sample.list metadata table.
+sample.list: Contains the SRA ID's of the samples.
+
+## Scripts:
+./scripts/get_sra_data.sh: Downloads the samples from the SRA based on sample.list.
