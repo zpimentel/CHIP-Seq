@@ -9,4 +9,5 @@ sample.list: Contains the SRA ID's of the samples.
 
 ## Scripts:
 ./scripts/get_sra_data.sh: Downloads the samples from the SRA based on sample.list.  
-./scripts/index_ref_genome.sh: Download, decompress, and index (with bowtie2) the human reference genome.
+./scripts/index_ref_genome.sh: Download, decompress, and index (with bowtie2) the human reference genome.  
+./scripts/map_reads.sh: Map the SRA reads to the human reference genome.
