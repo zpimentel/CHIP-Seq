@@ -2,7 +2,7 @@
 #SBATCH --time=24:00:00
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
-#SBATCH --array=1-3%3
+#SBATCH --array=1-14%14
 
 ## DESCRIPTION: This array job maps reads to the human ref genome.
 
