@@ -1,8 +1,5 @@
 # ChIP-Seq
-Reanalysis of ChIP-Seq data from ENCODE of H3K9me3 in human K562 cells.
-
-Experiment summary: https://www.encodeproject.org/experiments/ENCSR000APE/  
-Control summary: https://www.encodeproject.org/experiments/ENCSR000AKY/
+Reanalysis of transcription factor NFKB ChIP-Seq data from DOI: 10.1126/science.1183621. Samples were selected from GM10847 and GM12892 cells for comparison (5 biological replicates each + 2 IgG controls). NFKB regulation was stimulated with TNF-α.
 
 ## Files:
 sample.list: Contains the SRA ID's of the samples.
