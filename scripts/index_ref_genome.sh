@@ -8,8 +8,10 @@
 echo "START"
 date
 
-cd /data/zhanglab/zpimentel/ChIP-Seq/02_mapping
-module load bowtie2/2.2.9-foss-2016b
+cd /data/zhanglab/zpimentel/ChIP-Seq
+mkdir 02_mapping && cd 02_mapping
+
+module load Bowtie2/2.4.2-GCC-9.3.0
 
 # Download & decompress the human reference genome from ENCODE
 wget https://www.encodeproject.org/files/GRCh38_no_alt_analysis_set_GCA_000001405.15/@@download/GRCh38_no_alt_analysis_set_GCA_000001405.15.fasta.gz
