@@ -12,7 +12,7 @@ date
 cd /data/zhanglab/zpimentel/ChIP-Seq/01_raw_data
 
 # Contains fastq-dump function to download reads
-module load SRA-Toolkit/2.9.0-centos_linux64
+module load SRA-Toolkit/2.9.6-1-centos_linux64
 
 # Set up array job to download the reads at the same time
 # ID is now the SRA ID's we need to download
