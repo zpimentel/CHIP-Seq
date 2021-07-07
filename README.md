@@ -52,5 +52,7 @@ Output:
   ./02_mapping/mapping_out/\*.sam: SAM files from bowtie2 mapping of samples to human reference genome  
   ./02_mapping/mapping_out/\*.bam: BAM files from bowtie2 mapping of samples to human reference genome   
   ./02_mapping/mapping_out/\*_sorted.bam: Sorted BAM files from bowtie2 mapping of samples to human reference genome  
+  ./02_mapping/mapping_out/\*.bed: BED files from bowtie2 mapping of samples to human reference genome  
+
 
 
