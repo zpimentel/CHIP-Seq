@@ -32,7 +32,7 @@ Output:
 mkdir ./scripts/run/index_ref_genome/ && cd ./scripts/run/index_ref_genome/  
 
 # submit script to the queue
-sbatch ../index_ref_genome.sh  
+sbatch ../../index_ref_genome.sh  
 ```
 
 Output:  
@@ -45,7 +45,7 @@ Output:
 mkdir ./scripts/run/map_reads/ && cd ./scripts/run/map_reads/  
 
 # submit script to the queue
-sbatch ../map_reads.sh  
+sbatch ../../map_reads.sh  
  ```
  
 Output:  
@@ -53,6 +53,16 @@ Output:
   ./02_mapping/mapping_out/\*.bam: BAM files from bowtie2 mapping of samples to human reference genome   
   ./02_mapping/mapping_out/\*_sorted.bam: Sorted BAM files from bowtie2 mapping of samples to human reference genome  
   ./02_mapping/mapping_out/\*.bed: BED files from bowtie2 mapping of samples to human reference genome  
+  
+### 4. Call peaks with epic  
+```
+# create directory to store slurm output files for this analysis
+mkdir ./scripts/run/peak_calling/ && cd ./scripts/run/peak_calling/  
+
+# submit script to the queue
+sbatch ../../call_peaks.sh  
+ ```
+
 
 
 
