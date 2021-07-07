@@ -16,7 +16,7 @@ mkdir -p ./scripts/run/get_sra_data/ && cd ./scripts/run/get_sra_data/
 sbatch ../get_sra_data.sh  
 
 Output:  
-  ./01_raw_data: Contains the raw fastq files downloaded from the SRA
+  ./01_raw_data/*.fastq: Contains the raw fastq files downloaded from the SRA
 
 ### 2. Download and index the human reference genome
 mkdir ./scripts/run/index_ref_genome/ && cd ./scripts/run/index_ref_genome/  
