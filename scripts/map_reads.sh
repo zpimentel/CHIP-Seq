@@ -12,6 +12,7 @@ date
 cd /data/zhanglab/zpimentel/ChIP-Seq/02_mapping
 module load Bowtie2/2.4.2-GCC-9.3.0
 module load SAMtools/1.9-foss-2018b
+module load BEDTools/2.30.0-GCC-10.2.0
 
 # Set up array job to download the reads at the same time
 # ID is now the SRA ID's we need to download
@@ -26,6 +27,8 @@ samtools view -S -b ./mapping_out/${ID}.sam > ./mapping_out/${ID}.bam
 # sort bam files
 samtools sort ./mapping_out/${ID}.bam -o ./mapping_out/${ID}_sorted.bam
 
+# covert to bed file
+bamToBed -i ./mapping_out/${ID}_sorted.bam > ./mapping_out/${ID}.bed
 
 echo "DONE"
 date
