@@ -7,7 +7,8 @@ sample.list: Contains the SRA ID's of the samples. Column 1: SRA ID, Column 2: C
 ## Scripts:
 ./scripts/get_sra_data.sh: Downloads the samples from the SRA based on sample.list.  
 ./scripts/index_ref_genome.sh: Download, decompress, and index (with bowtie2) the human reference genome.  
-./scripts/map_reads.sh: Map the SRA reads to the human reference genome.
+./scripts/map_reads.sh: Map the SRA reads to the human reference genome.  
+./scripts/call_peaks.sh: Call peaks for the 2 cell types independently with epic.  
 
 ## Steps:  
 Clone the git repo and change directory into it.  
