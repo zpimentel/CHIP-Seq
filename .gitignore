@@ -1,3 +1,4 @@
 scripts/run/*
 01_raw_data/*
 02_mapping/*
+03_peak_calling/*
