@@ -25,4 +25,11 @@ sbatch ../index_ref_genome.sh
 Output:  
   ./02_mapping/GRCh38: Bowtie2 indexed human reference genomes  
   ./02_mapping/GRCh38_no_alt_analysis_set_GCA_000001405.15.fasta: Human reference genome fasta file
+  
+### 3. Map the reads to the human reference genome  
+mkdir ./scripts/run/map_reads/ && cd ./scripts/run/map_reads/  
+sbatch ../map_reads.sh  
+  
+Output:  
+  ./02_mapping/mapping_out/*.sam: SAM files from bowtie2 mapping of samples to human reference genomes.
 
