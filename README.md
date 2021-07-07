@@ -12,14 +12,14 @@ sample.list: Contains the SRA ID's of the samples. Column 1: SRA ID, Column 2: C
 ## Steps:
 ### 1. Download the reads from the SRA
 mkdir 01_raw_data  
-cd ./scripts/run/get_sra_data/  
+mkdir -p ./scripts/run/get_sra_data/ && cd ./scripts/run/get_sra_data/  
 sbatch ../get_sra_data.sh  
 
 Output:  
   ./01_raw_data: Contains the raw fastq files downloaded from the SRA
 
 ### 2. Download and index the human reference genome
-cd ./scripts/run/index_ref_genome/  
+mkdir ./scripts/run/index_ref_genome/ && cd ./scripts/run/index_ref_genome/  
 sbatch ../index_ref_genome.sh  
 
 Output:  
