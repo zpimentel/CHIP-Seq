@@ -9,7 +9,8 @@ sample.list: Contains the SRA ID's of the samples. Column 1: SRA ID, Column 2: C
 ./scripts/index_ref_genome.sh: Download, decompress, and index (with bowtie2) the human reference genome.  
 ./scripts/map_reads.sh: Map the SRA reads to the human reference genome.
 
-## Steps:
+## Steps:  
+Clone the git repo and change directory into it.  
 ### 1. Download the reads from the SRA
 mkdir 01_raw_data  
 mkdir -p ./scripts/run/get_sra_data/ && cd ./scripts/run/get_sra_data/  
