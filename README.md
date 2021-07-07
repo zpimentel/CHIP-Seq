@@ -62,7 +62,9 @@ mkdir ./scripts/run/peak_calling/ && cd ./scripts/run/peak_calling/
 # submit script to the queue
 sbatch ../../call_peaks.sh  
  ```
-
+Output:  
+./03_peak_calling/GM10847.out: Peak calls for GM10847 cells.
+./03_peak_calling/GM15510.out: Peak calls for GM15510 cells.
 
 
 
