@@ -21,7 +21,7 @@ mkdir 01_raw_data
 mkdir -p ./scripts/run/get_sra_data/ && cd ./scripts/run/get_sra_data/  
 
 # submit script to the queue
-sbatch ../get_sra_data.sh  
+sbatch ../../get_sra_data.sh  
 ```
 
 Output:  
